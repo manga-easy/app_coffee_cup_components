@@ -30,7 +30,7 @@ class _DialogComponentsState extends State<DialogComponents> {
             ),
             CoffeeButton(
               label: 'show()',
-              onPress: () => CoffeeDialogUnicorn(title: 'DialogUnicorn show')
+              onPressed: () => CoffeeDialogUnicorn(title: 'DialogUnicorn show')
                   .show(context),
             ),
             const SizedBox(
@@ -38,15 +38,16 @@ class _DialogComponentsState extends State<DialogComponents> {
             ),
             CoffeeButton(
               label: 'success()',
-              onPress: () => CoffeeDialogUnicorn(title: 'DialogUnicorn sucess')
-                  .sucess(context),
+              onPressed: () =>
+                  CoffeeDialogUnicorn(title: 'DialogUnicorn sucess')
+                      .sucess(context),
             ),
             const SizedBox(
               height: 10,
             ),
             CoffeeButton(
               label: 'error()',
-              onPress: () => CoffeeDialogUnicorn(
+              onPressed: () => CoffeeDialogUnicorn(
                 title: 'DialogUnicorn error',
                 middleText: 'Erro',
               ).error(context),
@@ -56,8 +57,9 @@ class _DialogComponentsState extends State<DialogComponents> {
             ),
             CoffeeButton(
               label: 'warning()',
-              onPress: () => CoffeeDialogUnicorn(title: 'DialogUnicorn warning')
-                  .warning(context),
+              onPressed: () =>
+                  CoffeeDialogUnicorn(title: 'DialogUnicorn warning')
+                      .warning(context),
             ),
             const SizedBox(
               height: 20,

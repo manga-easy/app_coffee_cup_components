@@ -29,8 +29,8 @@ class _ButtonComponentsState extends State<ButtonComponents> {
               height: 20,
             ),
             CoffeeButton(
-              label: 'CoffeButton',
-              onPress: () => print('CoffeButton'),
+              label: 'CoffeeButton',
+              onPressed: () => print('CoffeeButton'),
             ),
             const SizedBox(
               height: 10,

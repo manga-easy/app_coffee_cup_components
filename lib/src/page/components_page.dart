@@ -46,7 +46,9 @@ class _ComponentsPageState extends State<ComponentsPage> {
               onPressed: () {},
               label: Row(
                 children: [
-                  CoffeeText(text: 'Tema: '),
+                  CoffeeText(
+                    text: 'Tema: ',
+                  ),
                   SizedBox(
                     width: 100,
                     child: ChangeTheme(),

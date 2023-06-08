@@ -33,7 +33,8 @@ class _FieldComponentsState extends State<FieldComponents> {
             const SizedBox(
               height: 10,
             ),
-            CoffeeSearchField(),
+            CoffeeSearchField(
+            ),
             const SizedBox(
               height: 20,
             ),

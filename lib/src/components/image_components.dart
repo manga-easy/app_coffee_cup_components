@@ -22,42 +22,84 @@ class _ImageComponentsState extends State<ImageComponents> {
               height: 20,
             ),
             CoffeeText(
-              text: 'Dialog Components',
+              text: 'Images',
               typography: CoffeeTypography.title,
             ),
             const SizedBox(
               height: 20,
             ),
-            CoffeeButton(
-              label: 'show()',
-              onPress: () => CoffeeDialogUnicorn(title: 'DialogUnicorn show')
-                  .show(context),
+            Column(
+              children: [
+                CoffeeText(
+                  text: 'Cats',
+                  typography: CoffeeTypography.title,
+                ),
+                SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  height: 250,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      CoffeeImage.cats(AssetsCats.beingKnockedDown),
+                      CoffeeImage.cats(AssetsCats.hugging),
+                      CoffeeImage.cats(AssetsCats.runningAfterHeart),
+                      CoffeeImage.cats(AssetsCats.runningCircle),
+                      CoffeeImage.cats(AssetsCats.smart),
+                    ],
+                  ),
+                ),
+              ],
             ),
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
-            CoffeeButton(
-              label: 'success()',
-              onPress: () => CoffeeDialogUnicorn(title: 'DialogUnicorn sucess')
-                  .sucess(context),
+            Column(
+              children: [
+                CoffeeText(
+                  text: 'Horns',
+                  typography: CoffeeTypography.title,
+                ),
+                SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  height: 250,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      CoffeeImage.horn(AssetsHorn.hornAzul),
+                      CoffeeImage.horn(AssetsHorn.hornCinza),
+                      CoffeeImage.horn(AssetsHorn.hornDourado),
+                      CoffeeImage.horn(AssetsHorn.hornRoxo),
+                      CoffeeImage.horn(AssetsHorn.hornVerde),
+                    ],
+                  ),
+                ),
+              ],
             ),
             const SizedBox(
-              height: 10,
+              height: 20,
             ),
-            CoffeeButton(
-              label: 'error()',
-              onPress: () => CoffeeDialogUnicorn(
-                title: 'DialogUnicorn error',
-                middleText: 'Erro',
-              ).error(context),
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            CoffeeButton(
-              label: 'warning()',
-              onPress: () => CoffeeDialogUnicorn(title: 'DialogUnicorn warning')
-                  .warning(context),
+            Column(
+              children: [
+                CoffeeText(
+                  text: 'Unicorns',
+                  typography: CoffeeTypography.title,
+                ),
+                SizedBox(
+                  width: MediaQuery.of(context).size.width,
+                  height: 250,
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      CoffeeImage.unicorn(AssetsUnicorn.alegre),
+                      CoffeeImage.unicorn(AssetsUnicorn.coffee),
+                      CoffeeImage.unicorn(AssetsUnicorn.fire),
+                      CoffeeImage.unicorn(AssetsUnicorn.lendo),
+                      CoffeeImage.unicorn(AssetsUnicorn.manutencao),
+                      CoffeeImage.unicorn(AssetsUnicorn.sad),
+                    ],
+                  ),
+                ),
+              ],
             ),
             const SizedBox(
               height: 20,

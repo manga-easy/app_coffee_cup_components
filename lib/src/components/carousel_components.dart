@@ -49,23 +49,19 @@ class _CarouselComponentsState extends State<CarouselComponents> {
                 height: 160,
                 width: 100,
                 child: CoffeeCarousel(
-                  items: [
+                  items: <CarouselDTO>[
                     CarouselDTO(
-                      link:
-                          'https://static.wikia.nocookie.net/onepiece/images/0/0e/Volume_1.png/revision/latest?cb=20140106204057&path-prefix=pt',
+                      link: '',
                       image:
                           'https://static.wikia.nocookie.net/onepiece/images/0/0e/Volume_1.png/revision/latest?cb=20140106204057&path-prefix=pt',
                     ),
-                    CarouselDTO(
-                      link:
-                          'https://static.wikia.nocookie.net/onepiece/images/0/0e/Volume_1.png/revision/latest?cb=20140106204057&path-prefix=pt',
+                    CarouselDTO(  
+                      link: '',
                       image:
                           'https://static.wikia.nocookie.net/onepiece/images/0/0e/Volume_1.png/revision/latest?cb=20140106204057&path-prefix=pt',
                     ),
                   ],
-                  onTap: (a) {
-                    print(a.image);
-                  },
+                  onTap: (CarouselDTO i) {},
                 ),
               ),
             ],

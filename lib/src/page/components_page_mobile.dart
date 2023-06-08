@@ -3,6 +3,7 @@ import 'package:manga_easy_components/src/components/button_components.dart';
 import 'package:manga_easy_components/src/components/carousel_components.dart';
 import 'package:manga_easy_components/src/components/dialog_components.dart';
 import 'package:manga_easy_components/src/components/field_components.dart';
+import 'package:manga_easy_components/src/components/image_components.dart';
 import 'package:manga_easy_components/src/components/pages_components.dart';
 import 'package:manga_easy_components/src/components/random_components.dart';
 import 'package:manga_easy_components/src/components/text_components.dart';
@@ -35,7 +36,9 @@ class _ComponentsPageMobileState extends State<ComponentsPageMobile> {
           Divider(),
           PagesComponents(),
           Divider(),
-          RandomComponents()
+          RandomComponents(),
+          Divider(),
+          ImageComponents()
         ],
       ),
     );

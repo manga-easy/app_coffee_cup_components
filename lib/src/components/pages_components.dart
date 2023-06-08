@@ -72,8 +72,10 @@ class _PagesComponentsState extends State<PagesComponents> {
               width: 300,
               child: UnicornPage(
                 unicorn: AssetsUnicorn.manutencao,
-                body: 'body',
-                title: 'title',
+                title: 'Title message',
+                body: 'Body message',
+                actionButton: () => print('action'),
+                titleButton: 'action',
               ),
             ),
             const SizedBox(
@@ -86,7 +88,10 @@ class _PagesComponentsState extends State<PagesComponents> {
               height: 400,
               child: LoadingPage(animationValue: loadingValue),
             ),
-            CoffeeButton(label: 'Reset loading', onPress: () => resetLoading()),
+            CoffeeButton(
+              label: 'Reset loading',
+              onPressed: () => resetLoading(),
+            ),
             const SizedBox(
               height: 20,
             ),

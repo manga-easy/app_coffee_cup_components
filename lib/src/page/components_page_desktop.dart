@@ -22,16 +22,18 @@ class _ComponentsPageDesktopState extends State<ComponentsPageDesktop> {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          SizedBox(
-            width: 300,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                TextComponents(),
-                ButtonComponents(),
-                FieldComponents()
-              ],
+          SingleChildScrollView(
+            child: SizedBox(
+              width: 300,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  TextComponents(),
+                  ButtonComponents(),
+                  FieldComponents()
+                ],
+              ),
             ),
           ),
           SizedBox(width: 300, child: CarouselComponents()),
