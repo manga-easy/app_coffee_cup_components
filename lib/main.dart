@@ -19,7 +19,7 @@ class _AppWidgetState extends State<AppWidget> {
     return AnimatedBuilder(
       animation: ThemeService(),
       builder: (context, child) => MaterialApp(
-        theme: ThemeService().returnThemeData(),
+        theme: ThemeService().returnThemeData().copyWith(useMaterial3: true),
         debugShowCheckedModeBanner: false,
         home: const ComponentsPage(),
       ),
