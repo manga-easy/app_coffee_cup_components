@@ -1,14 +1,14 @@
 import 'package:coffee_cup/coffe_cup.dart';
 import 'package:flutter/material.dart';
 
-class DialogComponents extends StatefulWidget {
-  const DialogComponents({super.key});
+class CoffeeDialogComponent extends StatefulWidget {
+  const CoffeeDialogComponent({super.key});
 
   @override
-  State<DialogComponents> createState() => _DialogComponentsState();
+  State<CoffeeDialogComponent> createState() => _CoffeeDialogComponentState();
 }
 
-class _DialogComponentsState extends State<DialogComponents> {
+class _CoffeeDialogComponentState extends State<CoffeeDialogComponent> {
   bool v = false;
   @override
   Widget build(BuildContext context) {

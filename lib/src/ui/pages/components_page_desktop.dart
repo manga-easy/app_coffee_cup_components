@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:manga_easy_components/src/ui/molecules/button_components.dart';
-import 'package:manga_easy_components/src/ui/molecules/carousel_components.dart';
-import 'package:manga_easy_components/src/ui/molecules/dialog_components.dart';
-import 'package:manga_easy_components/src/ui/molecules/field_components.dart';
-import 'package:manga_easy_components/src/ui/molecules/image_components.dart';
-import 'package:manga_easy_components/src/ui/molecules/pages_components.dart';
-import 'package:manga_easy_components/src/ui/molecules/random_components.dart';
-import 'package:manga_easy_components/src/ui/molecules/text_components.dart';
+import 'package:manga_easy_components/src/ui/molecules/coffee_button_component.dart';
+import 'package:manga_easy_components/src/ui/molecules/coffee_carousel_component.dart';
+import 'package:manga_easy_components/src/ui/molecules/coffee_dialog_component.dart';
+import 'package:manga_easy_components/src/ui/molecules/coffee_field_component.dart';
+import 'package:manga_easy_components/src/ui/molecules/coffee_image_component.dart';
+import 'package:manga_easy_components/src/ui/molecules/coffee_pages_component.dart';
+import 'package:manga_easy_components/src/ui/molecules/coffee_random_component.dart';
+import 'package:manga_easy_components/src/ui/molecules/coffee_text_component.dart';
 
 class ComponentsPageDesktop extends StatefulWidget {
   const ComponentsPageDesktop({super.key});
@@ -31,15 +31,15 @@ class _ComponentsPageDesktopState extends State<ComponentsPageDesktop> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    TextComponents(),
+                    CoffeeTextComponent(),
                     const SizedBox(
                       height: 20,
                     ),
-                    ButtonComponents(),
+                    CoffeeButtonComponent(),
                     const SizedBox(
                       height: 20,
                     ),
-                    FieldComponents()
+                    CoffeeFieldComponent()
                   ],
                 ),
               ),
@@ -48,7 +48,7 @@ class _ComponentsPageDesktopState extends State<ComponentsPageDesktop> {
               width: 20,
             ),
             SingleChildScrollView(
-              child: SizedBox(width: 300, child: CarouselComponents()),
+              child: SizedBox(width: 300, child: CoffeeCarouselComponent()),
             ),
             const SizedBox(
               width: 20,
@@ -60,11 +60,11 @@ class _ComponentsPageDesktopState extends State<ComponentsPageDesktop> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    RandomComponents(),
+                    CoffeeRandomComponent(),
                     const SizedBox(
                       height: 20,
                     ),
-                    DialogComponents()
+                    CoffeeDialogComponent()
                   ],
                 ),
               ),
@@ -74,14 +74,14 @@ class _ComponentsPageDesktopState extends State<ComponentsPageDesktop> {
             ),
             SizedBox(
               width: 400,
-              child: SingleChildScrollView(child: ImageComponents()),
+              child: SingleChildScrollView(child: CoffeeImageComponent()),
             ),
             const SizedBox(
               width: 20,
             ),
             SizedBox(
               width: 400,
-              child: SingleChildScrollView(child: PagesComponents()),
+              child: SingleChildScrollView(child: CoffeePagesComponent()),
             ),
           ],
         ),

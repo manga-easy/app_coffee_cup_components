@@ -3,14 +3,14 @@ import 'dart:async';
 import 'package:coffee_cup/coffe_cup.dart';
 import 'package:flutter/material.dart';
 
-class PagesComponents extends StatefulWidget {
-  const PagesComponents({super.key});
+class CoffeePagesComponent extends StatefulWidget {
+  const CoffeePagesComponent({super.key});
 
   @override
-  State<PagesComponents> createState() => _PagesComponentsState();
+  State<CoffeePagesComponent> createState() => _CoffeePagesComponentState();
 }
 
-class _PagesComponentsState extends State<PagesComponents> {
+class _CoffeePagesComponentState extends State<CoffeePagesComponent> {
   double loadingValue = 0.0;
   Stream<double> loading() async* {
     final int seconds = 3;

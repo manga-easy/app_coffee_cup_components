@@ -21,7 +21,6 @@ dependencies:
 
   # Third party
   flutter_colorpicker: ^1.0.3
-  share_plus: ^7.0.2
 
 dev_dependencies:
   flutter_test:

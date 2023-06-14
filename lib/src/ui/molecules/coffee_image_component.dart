@@ -1,14 +1,14 @@
 import 'package:coffee_cup/coffe_cup.dart';
 import 'package:flutter/material.dart';
 
-class ImageComponents extends StatefulWidget {
-  const ImageComponents({super.key});
+class CoffeeImageComponent extends StatefulWidget {
+  const CoffeeImageComponent({super.key});
 
   @override
-  State<ImageComponents> createState() => _ImageComponentsState();
+  State<CoffeeImageComponent> createState() => _CoffeeImageComponentState();
 }
 
-class _ImageComponentsState extends State<ImageComponents> {
+class _CoffeeImageComponentState extends State<CoffeeImageComponent> {
   bool v = false;
   @override
   Widget build(BuildContext context) {

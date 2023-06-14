@@ -1,14 +1,14 @@
 import 'package:coffee_cup/coffe_cup.dart';
 import 'package:flutter/material.dart';
 
-class ButtonComponents extends StatefulWidget {
-  const ButtonComponents({super.key});
+class CoffeeButtonComponent extends StatefulWidget {
+  const CoffeeButtonComponent({super.key});
 
   @override
-  State<ButtonComponents> createState() => _ButtonComponentsState();
+  State<CoffeeButtonComponent> createState() => _CoffeeButtonComponentState();
 }
 
-class _ButtonComponentsState extends State<ButtonComponents> {
+class _CoffeeButtonComponentState extends State<CoffeeButtonComponent> {
   bool v = false;
   @override
   Widget build(BuildContext context) {

@@ -1,14 +1,14 @@
 import 'package:coffee_cup/coffe_cup.dart';
 import 'package:flutter/material.dart';
 
-class CarouselComponents extends StatefulWidget {
-  const CarouselComponents({super.key});
+class CoffeeCarouselComponent extends StatefulWidget {
+  const CoffeeCarouselComponent({super.key});
 
   @override
-  State<CarouselComponents> createState() => _CarouselComponentsState();
+  State<CoffeeCarouselComponent> createState() => _CoffeeCarouselComponentState();
 }
 
-class _CarouselComponentsState extends State<CarouselComponents> {
+class _CoffeeCarouselComponentState extends State<CoffeeCarouselComponent> {
   bool v = false;
   @override
   Widget build(BuildContext context) {

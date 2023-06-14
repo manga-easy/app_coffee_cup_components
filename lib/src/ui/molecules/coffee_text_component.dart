@@ -1,14 +1,14 @@
 import 'package:coffee_cup/coffe_cup.dart';
 import 'package:flutter/material.dart';
 
-class RandomComponents extends StatefulWidget {
-  const RandomComponents({super.key});
+class CoffeeTextComponent extends StatefulWidget {
+  const CoffeeTextComponent({super.key});
 
   @override
-  State<RandomComponents> createState() => _RandomComponentsState();
+  State<CoffeeTextComponent> createState() => _CoffeeTextComponentState();
 }
 
-class _RandomComponentsState extends State<RandomComponents> {
+class _CoffeeTextComponentState extends State<CoffeeTextComponent> {
   @override
   Widget build(BuildContext context) {
     return CoffeeContainer(
@@ -21,19 +21,29 @@ class _RandomComponentsState extends State<RandomComponents> {
               height: 20,
             ),
             CoffeeText(
-              text: 'Random Components',
+              text: 'Text Components',
               typography: CoffeeTypography.title,
             ),
             const SizedBox(
               height: 20,
             ),
             CoffeeText(
-              text: 'Coffee Rating',
+              text: 'CoffeeText title',
+              typography: CoffeeTypography.title,
             ),
             const SizedBox(
               height: 10,
             ),
-            CoffeeRating(onRatingUpdate: (_) {}),
+            CoffeeText(
+              text: 'CoffeeText button',
+              typography: CoffeeTypography.button,
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            CoffeeText(
+              text: 'CoffeeText body',
+            ),
             const SizedBox(
               height: 20,
             ),

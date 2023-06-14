@@ -1,14 +1,14 @@
 import 'package:coffee_cup/coffe_cup.dart';
 import 'package:flutter/material.dart';
 
-class FieldComponents extends StatefulWidget {
-  const FieldComponents({super.key});
+class CoffeeFieldComponent extends StatefulWidget {
+  const CoffeeFieldComponent({super.key});
 
   @override
-  State<FieldComponents> createState() => _FieldComponentsState();
+  State<CoffeeFieldComponent> createState() => _CoffeeFieldComponentState();
 }
 
-class _FieldComponentsState extends State<FieldComponents> {
+class _CoffeeFieldComponentState extends State<CoffeeFieldComponent> {
   @override
   Widget build(BuildContext context) {
     return CoffeeContainer(
