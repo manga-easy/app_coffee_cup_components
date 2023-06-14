@@ -12,7 +12,7 @@ class _CarouselComponentsState extends State<CarouselComponents> {
   bool v = false;
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return CoffeeContainer(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -55,7 +55,7 @@ class _CarouselComponentsState extends State<CarouselComponents> {
                       image:
                           'https://static.wikia.nocookie.net/onepiece/images/0/0e/Volume_1.png/revision/latest?cb=20140106204057&path-prefix=pt',
                     ),
-                    CarouselDTO(  
+                    CarouselDTO(
                       link: '',
                       image:
                           'https://static.wikia.nocookie.net/onepiece/images/0/0e/Volume_1.png/revision/latest?cb=20140106204057&path-prefix=pt',

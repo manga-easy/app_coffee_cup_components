@@ -1,17 +1,25 @@
 import 'package:coffee_cup/coffe_cup.dart';
 import 'package:flutter/material.dart';
 
-class CreateThemeDrawer extends StatefulWidget {
-  const CreateThemeDrawer({super.key});
+class ThemeBuilderMobile extends StatefulWidget {
+  const ThemeBuilderMobile({super.key});
 
   @override
-  State<CreateThemeDrawer> createState() => _CreateThemeDrawerState();
+  State<ThemeBuilderMobile> createState() => _ThemeBuilderMobileState();
 }
 
-class _CreateThemeDrawerState extends State<CreateThemeDrawer> {
+class _ThemeBuilderMobileState extends State<ThemeBuilderMobile> {
+  final textController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      width: MediaQuery.of(context).size.width * .8,
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 18.0, horizontal: 8),
         child: Column(
@@ -22,6 +30,13 @@ class _CreateThemeDrawerState extends State<CreateThemeDrawer> {
             ),
             const SizedBox(
               height: 10,
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            CoffeeButton(
+              label: 'backgroundColor',
+              onPressed: () {},
             ),
             Divider(),
             const SizedBox(

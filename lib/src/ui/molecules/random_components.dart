@@ -11,7 +11,7 @@ class RandomComponents extends StatefulWidget {
 class _RandomComponentsState extends State<RandomComponents> {
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return CoffeeContainer(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(

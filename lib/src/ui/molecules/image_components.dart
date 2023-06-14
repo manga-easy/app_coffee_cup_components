@@ -12,7 +12,7 @@ class _ImageComponentsState extends State<ImageComponents> {
   bool v = false;
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return CoffeeContainer(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
@@ -34,9 +34,11 @@ class _ImageComponentsState extends State<ImageComponents> {
                   text: 'Cats',
                   typography: CoffeeTypography.title,
                 ),
+                const SizedBox(
+                  height: 10,
+                ),
                 SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  height: 250,
+                  height: 120,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
@@ -59,9 +61,11 @@ class _ImageComponentsState extends State<ImageComponents> {
                   text: 'Horns',
                   typography: CoffeeTypography.title,
                 ),
+                const SizedBox(
+                  height: 10,
+                ),
                 SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  height: 250,
+                  height: 120,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
@@ -84,9 +88,11 @@ class _ImageComponentsState extends State<ImageComponents> {
                   text: 'Unicorns',
                   typography: CoffeeTypography.title,
                 ),
+                const SizedBox(
+                  height: 10,
+                ),
                 SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  height: 250,
+                  height: 120,
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [

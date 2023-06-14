@@ -12,7 +12,7 @@ class _DialogComponentsState extends State<DialogComponents> {
   bool v = false;
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return CoffeeContainer(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
@@ -30,8 +30,11 @@ class _DialogComponentsState extends State<DialogComponents> {
             ),
             CoffeeButton(
               label: 'show()',
-              onPressed: () => CoffeeDialogUnicorn(title: 'DialogUnicorn show')
-                  .show(context),
+              onPressed: () =>
+                  CoffeeDialogUnicorn(title: 'DialogUnicorn show').show(
+                context,
+                AssetsUnicorn.alegre,
+              ),
             ),
             const SizedBox(
               height: 10,
@@ -49,7 +52,7 @@ class _DialogComponentsState extends State<DialogComponents> {
               label: 'error()',
               onPressed: () => CoffeeDialogUnicorn(
                 title: 'DialogUnicorn error',
-                middleText: 'Erro',
+                description: 'Erro',
               ).error(context),
             ),
             const SizedBox(

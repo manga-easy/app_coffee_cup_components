@@ -48,7 +48,7 @@ class _PagesComponentsState extends State<PagesComponents> {
   Widget build(BuildContext context) {
     print(loadingValue);
 
-    return Card(
+    return CoffeeContainer(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
@@ -67,15 +67,20 @@ class _PagesComponentsState extends State<PagesComponents> {
             CoffeeText(
               text: 'Unicorn Page',
             ),
-            SizedBox(
-              height: 700,
-              width: 300,
-              child: UnicornPage(
-                unicorn: AssetsUnicorn.manutencao,
-                title: 'Title message',
-                body: 'Body message',
-                actionButton: () => print('action'),
-                titleButton: 'action',
+            const SizedBox(
+              height: 10,
+            ),
+            CoffeeContainer(
+              child: SizedBox(
+                height: 600,
+                width: 300,
+                child: UnicornPage(
+                  unicorn: AssetsUnicorn.manutencao,
+                  title: 'Title message',
+                  body: 'Body message',
+                  actionButton: () => print('action'),
+                  titleButton: 'action',
+                ),
               ),
             ),
             const SizedBox(
@@ -84,13 +89,21 @@ class _PagesComponentsState extends State<PagesComponents> {
             CoffeeText(
               text: 'Loading Page',
             ),
-            SizedBox(
-              height: 400,
-              child: LoadingPage(animationValue: loadingValue),
+            const SizedBox(
+              height: 10,
             ),
-            CoffeeButton(
-              label: 'Reset loading',
-              onPressed: () => resetLoading(),
+            CoffeeContainer(
+              child: SizedBox(
+                height: 600,
+                child: LoadingPage(animationValue: loadingValue),
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            CoffeeIconButton(
+              icon: Icons.restart_alt_outlined,
+              onTap: () => resetLoading(),
             ),
             const SizedBox(
               height: 20,

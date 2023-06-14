@@ -12,7 +12,7 @@ class _ButtonComponentsState extends State<ButtonComponents> {
   bool v = false;
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return CoffeeContainer(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
@@ -39,6 +39,9 @@ class _ButtonComponentsState extends State<ButtonComponents> {
               text: 'CoffeeButtonText',
               onPressed: () => print('CoffeeButtonText'),
             ),
+            const SizedBox(
+              height: 10,
+            ),
             CoffeeSwitchButton(
               value: v,
               onChanged: (value) {
@@ -47,6 +50,13 @@ class _ButtonComponentsState extends State<ButtonComponents> {
                   v = value;
                 });
               },
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            CoffeeIconButton(
+              onTap: () => print('CoffeeIconButton'),
+              icon: Icons.check_circle,
             ),
             const SizedBox(
               height: 20,

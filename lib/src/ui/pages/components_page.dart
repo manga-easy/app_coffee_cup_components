@@ -1,9 +1,10 @@
 import 'package:coffee_cup/coffe_cup.dart';
 import 'package:flutter/material.dart';
-import 'package:manga_easy_components/src/atoms/change_theme.dart';
-import 'package:manga_easy_components/src/atoms/create_theme_drawer.dart';
-import 'package:manga_easy_components/src/page/components_page_desktop.dart';
-import 'package:manga_easy_components/src/page/components_page_mobile.dart';
+import 'package:manga_easy_components/src/ui/atoms/change_theme.dart';
+import 'package:manga_easy_components/src/ui/organisms/theme_builder_desktop.dart';
+import 'package:manga_easy_components/src/ui/organisms/theme_builder_mobile.dart';
+import 'package:manga_easy_components/src/ui/pages/components_page_desktop.dart';
+import 'package:manga_easy_components/src/ui/pages/components_page_mobile.dart';
 import 'package:manga_easy_themes/manga_easy_themes.dart';
 
 class ComponentsPage extends StatefulWidget {
@@ -35,12 +36,11 @@ class _ComponentsPageState extends State<ComponentsPage> {
                 typography: CoffeeTypography.button,
               ),
             ),
-            drawer: CreateThemeDrawer(),
+            drawer: constraints.maxWidth > 600
+                ? ThemeBuilderDesktop()
+                : ThemeBuilderMobile(),
             body: constraints.maxWidth > 600
-                ? SizedBox(
-                    height: constraints.maxHeight,
-                    child: ComponentsPageDesktop(),
-                  )
+                ? ComponentsPageDesktop()
                 : ComponentsPageMobile(),
             floatingActionButton: FloatingActionButton.extended(
               onPressed: () {},

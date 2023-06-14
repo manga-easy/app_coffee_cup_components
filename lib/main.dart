@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:manga_easy_components/src/page/components_page.dart';
+import 'package:manga_easy_components/src/ui/pages/components_page.dart';
 import 'package:manga_easy_themes/manga_easy_themes.dart';
 
 void main() {

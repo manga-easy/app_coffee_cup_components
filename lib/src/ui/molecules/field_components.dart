@@ -1,17 +1,17 @@
 import 'package:coffee_cup/coffe_cup.dart';
 import 'package:flutter/material.dart';
 
-class TextComponents extends StatefulWidget {
-  const TextComponents({super.key});
+class FieldComponents extends StatefulWidget {
+  const FieldComponents({super.key});
 
   @override
-  State<TextComponents> createState() => _TextComponentsState();
+  State<FieldComponents> createState() => _FieldComponentsState();
 }
 
-class _TextComponentsState extends State<TextComponents> {
+class _FieldComponentsState extends State<FieldComponents> {
   @override
   Widget build(BuildContext context) {
-    return Card(
+    return CoffeeContainer(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
@@ -21,29 +21,19 @@ class _TextComponentsState extends State<TextComponents> {
               height: 20,
             ),
             CoffeeText(
-              text: 'Text Components',
+              text: 'Field Components',
               typography: CoffeeTypography.title,
             ),
             const SizedBox(
               height: 20,
             ),
-            CoffeeText(
-              text: 'CoffeeText title',
-              typography: CoffeeTypography.title,
+            CoffeeField(
+              initText: 'Initial text',
             ),
             const SizedBox(
               height: 10,
             ),
-            CoffeeText(
-              text: 'CoffeeText button',
-              typography: CoffeeTypography.button,
-            ),
-            const SizedBox(
-              height: 10,
-            ),
-            CoffeeText(
-              text: 'CoffeeText body',
-            ),
+            CoffeeSearchField(),
             const SizedBox(
               height: 20,
             ),
