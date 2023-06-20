@@ -31,3 +31,6 @@ windows/
 android/
 .idea
 .metadata
+custom_lint.log
+windows/flutter/generated_plugins.cmake
+windows/flutter/generated_plugin_registrant.cc
