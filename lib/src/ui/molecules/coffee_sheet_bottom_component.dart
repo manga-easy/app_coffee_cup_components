@@ -10,12 +10,11 @@ class CoffeeSheetBottomComponent extends StatelessWidget {
       child: Column(
         children: [
           CoffeeText(
-            text: 'Sheet Bottom',
-            typography: CoffeeTypography.title,
+            text: 'CoffeeSheetBottom',
           ),
           SizedBox(height: 20),
           CoffeeButton(
-            label: 'Clique aqui para abrir o Sheet',
+            label: 'Abrir o Sheet',
             onPressed: () => CoffeeSheetBottom(
               title: CoffeeText(
                 text: 'Titulo',
@@ -28,7 +27,7 @@ class CoffeeSheetBottomComponent extends StatelessWidget {
                   Navigator.pop(context);
                 },
               ),
-            ).show(context)
+            ).show(context),
           ),
           SizedBox(height: 20),
         ],

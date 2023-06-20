@@ -35,6 +35,10 @@ class _CoffeeFieldComponentState extends State<CoffeeFieldComponent> {
             ),
             CoffeeSearchField(),
             const SizedBox(
+              height: 10,
+            ),
+            NewCoffeeSearchField(hintText: 'Pesquise seus mangás favoritos'),
+            const SizedBox(
               height: 20,
             ),
           ],

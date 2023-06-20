@@ -1,5 +1,6 @@
 import 'package:coffee_cup/coffe_cup.dart';
 import 'package:flutter/material.dart';
+import 'package:manga_easy_components/src/ui/molecules/coffee_sheet_bottom_component.dart';
 
 class CoffeeRandomComponent extends StatefulWidget {
   const CoffeeRandomComponent({super.key});
@@ -27,16 +28,23 @@ class _CoffeeRandomComponentState extends State<CoffeeRandomComponent> {
             const SizedBox(
               height: 20,
             ),
-            CoffeeText(
-              text: 'Coffee Rating',
+            CoffeeContainer(
+              child: Column(
+                children: [
+                  CoffeeText(
+                    text: 'Coffee Rating',
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  CoffeeRating(onRatingUpdate: (_) {}),
+                ],
+              ),
             ),
-            const SizedBox(
-              height: 10,
-            ),
-            CoffeeRating(onRatingUpdate: (_) {}),
             const SizedBox(
               height: 20,
             ),
+            CoffeeSheetBottomComponent(),
           ],
         ),
       ),
