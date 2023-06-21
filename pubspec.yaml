@@ -1,7 +1,6 @@
 name: manga_easy_components
 description: Project to explore coffecup components and create themes.
 publish_to: "none"
-
 version: 1.1.0
 
 environment:
