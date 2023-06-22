@@ -1,4 +1,6 @@
+import 'package:coffee_cup/coffe_cup.dart';
 import 'package:flutter/material.dart';
+import 'package:manga_easy_components/src/ui/molecules/advanced_search_field.dart';
 import 'package:manga_easy_components/src/ui/molecules/coffee_button_component.dart';
 import 'package:manga_easy_components/src/ui/molecules/coffee_carousel_component.dart';
 import 'package:manga_easy_components/src/ui/molecules/coffee_dialog_component.dart';
@@ -16,6 +18,17 @@ class ComponentsPageDesktop extends StatefulWidget {
 }
 
 class _ComponentsPageDesktopState extends State<ComponentsPageDesktop> {
+  final advancedEC = TextEditingController();
+  List<String> resultSearch = [
+    'One 1',
+    'One 2',
+    'One 3',
+    'One 4',
+    'One 5',
+    'One 6',
+    'One 7',
+    'One 8',
+  ];
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -49,6 +62,31 @@ class _ComponentsPageDesktopState extends State<ComponentsPageDesktop> {
             ),
             SingleChildScrollView(
               child: SizedBox(width: 300, child: CoffeeCarouselComponent()),
+            ),
+            const SizedBox(
+              width: 20,
+            ),
+            SizedBox(
+              width: 300,
+              child: SingleChildScrollView(
+                child: CoffeeContainer(
+                  child: Column(
+                    children: [
+                      CoffeeText(
+                        text: 'Advanced Search',
+                        typography: CoffeeTypography.title,
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      AdvancedSearchField(
+                        controller: advancedEC,
+                        list: resultSearch,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
             const SizedBox(
               width: 20,
