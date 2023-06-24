@@ -1,4 +1,5 @@
 import 'package:coffee_cup/coffe_cup.dart';
+import 'package:coffee_cup/features/fields/new_coffe_search_field.dart';
 import 'package:flutter/material.dart';
 
 class CoffeeFieldComponent extends StatefulWidget {
